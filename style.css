@@ -379,6 +379,11 @@ footer{
         margin: 1rem auto;
     }
 
+    .about .about-two, .about-three{
+        text-align: center;
+        }
+    
+
     .process-bar{
         display: none;
     }
