@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    /* 1rem*10 = 10px */
+    font-size: 1rem;
+    font-weight: 400;
+    color: whitesmoke;
+    
+}
+h1, h2, p {
+    margin: 1.6rem 0px;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: goldenrod;
+}
+
+p{
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* utility class */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+/* Styling the hero section */
+
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)),url('Origin-of-Network-Marketing.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.logo{
+    font-size: 2.4rem;
+    color:aliceblue;
+    margin: 0;
+}
+
+span{
+    color: goldenrod;
+}
+
+nav{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav box-icon {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 2.5rem;
+    padding-top: 2%;
+}
+
+nav ul li a:hover{
+    color: goldenrod;
+    transition: .5s ease-in-out;
+}
+
+
+.header-content{
+    width: 50%;
+    position: relative;
+    top: 10%;
+    left: 8%;
+}
+
+form{
+    margin: 2.4rem 0;
+}
+
+input{
+    font-size: 1.4rem;
+}
+
+input[type=text],input[type=email]{
+    width: 50%;
+    padding: 1rem 2rem;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+input[type=submit]{
+    width: 50%;
+    padding: 1rem 2rem;
+    margin: 0.8rem 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+
+input::placeholder{
+    font-size: 1rem;
+    color: #ccc;
+}
+
+
+/* Styling the About Section */
+.about-one , .about-two, .about-three{
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+
+.btn{
+    padding: 0.8rem 1.5rem;
+    margin: 0.4rem 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.services{
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
+
+.section-one{
+    flex-basis: 50%;
+}
+
+.section-two{
+    flex-basis: 30%;
+}
+
+.services .card{
+    padding: 2.5rem 6rem;
+    background-color: #dcdcdc;
+    margin: 1.4rem;
+    text-align: center;
+}
+
+h3{
+  color: black;
+}
+
+/* Styling the process section */
+
+.process .row{
+    justify-content: center;
+}
+
+.process-content{
+    margin: 1rem;
+}
+
+.process-bar{
+    width: 80%;
+    height: 5px;
+    background-color: goldenrod;
+    margin: auto;
+    position: relative;
+}
+
+.process-bar .circle1, 
+.process-bar .circle2,
+.process-bar .circle3 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: goldenrod;
+    position: absolute;
+}
+
+.process-bar .circle1{
+    top: -8px;
+    left: 50px;
+} 
+
+.process-bar .circle2{
+    top: -8px;
+    left: 50%;
+}
+
+.process-bar .circle3{
+    top: -8px;
+    right: 50px;
+}
+
+.content1,.content2,.content3{
+    padding: 1.8rem;
+}
+
+.process .content2{
+    text-align: center;
+}
+
+.process .content3{
+    text-align: right;
+}
+
+/* Styling the testimonial section */
+.testimony{
+    background-color: rgb(71, 71, 71);
+    color: whitesmoke;
+   
+}
+
+.testimony .card{
+    padding: 2rem 6rem;
+    margin: 0 1rem;
+    background-color: #222;
+    
+}
+
+.testimony .image{
+    height: 100px;
+    width: 100px;
+}
+
+.testimony img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.card h4{
+    font-size: 1.6rem;
+    color: goldenrod;
+    text-align: center;
+}
+
+.card p{
+    margin-bottom: 10px;
+}
+
+.card h4, .card p, .card .icon {
+    text-align: center;
+}
+
+.card .image{
+    margin: auto;
+}
+
+
+/* Styling the Contact section */
+.contact .row{
+    justify-content: center;
+}
+
+.contact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input{
+    width: 50%;
+}
+
+.contact textarea{
+    width: 50%;
+    height: 150px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+    margin: 1.2rem 0;
+    color: #222;
+    resize: none;
+}
+
+
+/* footer */
+
+footer{
+    height: 8rem;
+    line-height: 8rem;
+    background-color: rgb(71, 71, 71);
+    color: whitesmoke;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* media querries */
+@media only screen and (max-width:768px){
+    .row{
+        flex-direction: column;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        position:relative;
+    }
+
+    nav box-icon{
+        display: block;
+        position: absolute;
+        top: 1.8rem;
+        right: 3.2rem;
+    }
+
+    nav ul{
+        background-color: whitesmoke;
+        display: none;
+    }
+
+    nav ul li{
+        padding: 2% 0;
+        display: block;
+    }
+
+    nav ul li a {
+        color: #222;
+    }
+
+    .showmenu {
+        display: block;
+    }
+
+    .header-content{
+        width: 100%;
+        top: 16%;
+        padding: 0 8px;
+        left: 0;
+        text-align: center;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=submit]{
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .process-bar{
+        display: none;
+    }
+
+    .process-content{
+        margin-top: 20px;
+    }
+
+    .process .content1,
+    .process .content2,
+    .process .content3 {
+       text-align: center;
+    }
+
+    .testimony .card{
+        margin: 2rem 0;
+    }
+
+    .contact form input,
+    .contact textarea{
+        width: 100%;
+    }
+}
